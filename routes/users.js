@@ -6,7 +6,7 @@ var mdAutenticacion = require('../middlewares/autenticacion');
  //GET
  router.get('/', usuariosGet)
 //POST
-router.post('/',mdAutenticacion.verificaToken, usaurioPost)
+router.post('/', usaurioPost)
 //PUT-actualziar
 router.put('/:id',mdAutenticacion.verificaToken, usuarioPut)
 //DELETE

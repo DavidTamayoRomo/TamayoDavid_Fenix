@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "f71b3a8e-f8c1-46e6-8a65-4da71f4ba142",
+		"name": "fenix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Prueba 10\",\r\n    \"password\":26,\r\n    \"active\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/60d9d4bce18e3f132461f058?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"60d9d4bce18e3f132461f058"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"David Tamayo Final 2\",\r\n    \"active\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/60d9ddaa44427812c496b291?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"60d9ddaa44427812c496b291"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contact",
+			"item": [
+				{
+					"name": "Contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/contact?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contact"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creaar Contacto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"active\": true,\r\n    \"city\": \"Ambato\",\r\n    \"countty\":\"Ecuador\",\r\n    \"name\":\"David\",\r\n    \"last_name\":\"DOS\",\r\n    \"adress\":\"ingahurco\",\r\n    \"email\":\"david95tamayo@gmail.com\",\r\n    \"photo\":\"jdhkasdjh\",\r\n    \"mobile\":\"+59387284902\",\r\n    \"contract\":\"Contrato\",\r\n    \"state\":\"dd\",\r\n    \"salary\":\"1000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/contact?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contact"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/contact/60d9e7ab3ff5bd0dac5d9a22?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contact",
+								"60d9e7ab3ff5bd0dac5d9a22"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contacto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"active\": false,\r\n    \"city\": \"Ambato\",\r\n    \"countty\":\"Ecuador\",\r\n    \"name\":\"David\",\r\n    \"last_name\":\"DOS\",\r\n    \"adress\":\"ingahurco\",\r\n    \"email\":\"david95tamayo@gmail.com\",\r\n    \"photo\":\"jdhkasdjh\",\r\n    \"mobile\":\"+59387284902\",\r\n    \"contract\":\"Contrato\",\r\n    \"state\":\"dd\",\r\n    \"salary\":\"1000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/contact/60d9e7b53ff5bd0dac5d9a24?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contact",
+								"60d9e7b53ff5bd0dac5d9a24"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYwZDlkNGJjZTE4ZTNmMTMyNDYxZjA1OCIsIm5vbWJyZSI6IkRhdmlkIHRhbWF5byA2IiwicGFzc3dvcmQiOiI6KSIsImFjdGl2ZSI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNjI0ODg5NTI2LCJleHAiOjE2MjQ5MDM5MjZ9.iz0BoUWPjuD3qc-VdnegYPh9si9xw4xiP0QGuT8g77Y"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Generar token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"David tamayo 6\",\r\n    \"password\": \"26\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
