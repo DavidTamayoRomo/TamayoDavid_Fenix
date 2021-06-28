@@ -6,6 +6,7 @@ class Server {
     constructor() {
         this.app = express()
         this.usariosPath='/api/user'
+        this.contactPath='/api/contact'
         //Conectar base de datos
         this.conectarBD()
         this.middlewares()
@@ -26,6 +27,7 @@ class Server {
     }
     routes() {
         this.app.use(this.usariosPath,require('../routes/users'))
+        this.app.use(this.contactPath,require('../routes/contacts'))
     }
     listen(){
         this.app.listen(process.env.PORT, ()=>{
